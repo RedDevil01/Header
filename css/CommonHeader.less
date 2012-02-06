@@ -1,0 +1,85 @@
+body {margin:0px; padding:0px;}
+body, div, td	{font-size:13px; font-family:Arial, Helvetica, sans-serif;}
+img{border:0px; cursor:default;}
+
+/* Font Sizes */
+.FS13{font-size:13px;}
+.FS14{font-size:14px;}
+
+/* Margin Styles */
+.TMar3{margin-top:3px;}
+.RMar5{margin-right:5px;}
+
+/*Alignment and Positions*/	
+.CB{clear:both;}
+.Fl{float:left;}
+.Fr{float:right}
+.B{font-weight:bold;}
+.PR{position:relative;}
+.PA{position:absolute;}
+.TxtR{text-align:right}
+.TxtC{text-align:center}
+.None{display:none}
+.CH{cursor:pointer;}
+.OH{overflow:hidden;}
+.UnLine{text-decoration:underline;}
+
+/*Padding*/
+.H_PLR10{padding:0px 10px;}
+.H_PLR510{padding:0px 5px 0px 10px;}
+
+/*menuContainer*/
+.H_MenuContainer{position:relative; width:395px;_width:735px; height:65px; z-index:30;}
+
+.SettingsIco{background:url( Image/DDC_MenuIcons.png) no-repeat; height:20px; width:25px; margin:0 auto; cursor:pointer;}
+
+/*common headerContainer*/
+.HeaderContainer{
+
+	ul.H_MenuLnk{margin:0px 0px 0px 17px; padding:0px; list-style:none; overflow:hidden; width:620px; position:absolute; left:0px; top:0px; z-index:20;}
+	
+	a.WhiteLnk1	{color: #ffffff; text-decoration: none;}
+	a.WhiteLnk1:hover{color: #ffffff; text-decoration: underline;}	
+	&.BG_Full{background-position:center 0px;width:100%; height:110px; position:relative;}
+}
+
+#HeaderMenu.Full{
+	.H_MenuLnk li{float:left; padding:24px 4px 0px 4px;}
+	.H_MenuTabs{width:80px; color:#FF833C; text-decoration:none; position:relative; height:68px; cursor:pointer; border:0px solid red; }
+	.H_MenuLnk_Act, #HeaderMenu.Full.H_MenuLnk_Act .H_MenuTabCont{color:#FCFFE1;}
+	.H_MenuTabCont{position:absolute; bottom:5px; width:80px; -moz-user-select:none; -webkit-user-select:none; text-align:center; left:0px; color:#FCFFE1; font-size:12px;}
+	.H_MenuTabCont{display:block;bottom:5px;}	
+}
+
+/*Sprite image for icons*/
+.SpriteImg{background:url(Image/DDC_MenuIcons.png) no-repeat; height:54px; width:49px; margin:0 auto; }
+.VzImg{background:url( Image/DDC_Logo.png) no-repeat;width:97px;height:60px;margin-top:7px;display:block;}
+
+
+/* Theme = 'Orange' */
+.HeaderContainer.Orange {
+	background-image:url(Image/Orange/DDC_HDBG.png);
+	
+	.H_UserInfo{color:#FCBC4B; }
+	.H_Lnk{color:#FCBC4B;text-decoration:none;}
+	a.H_Lnk{ color:#ffffff;text-decoration:none;}
+	a.H_Lnk:hover{text-decoration:underline;}
+	.H_Ic_Home{ background-position:0px -56px;}
+	.H_Ic_Act{ background-position:-49px -56px;}
+	.H_Ic_Mon{ background-position:-98px -56px;}
+	.H_Ic_Ast{ background-position:-245px -56px;}
+	.H_Ic_Rpt{ background-position:-294px -56px;}
+	.H_Ic_Sys{ background-position:-147px -56px;}
+	.H_Ic_Ord{ background-position:-196px -56px;}
+	.SettingsIco{background-position:-350px -71px;}
+	
+	.Full{background:url( Image/Orange/DDC_MenuBG.png) no-repeat; width:990px; height:110px; margin:0 auto; position:relative; z-index:30;
+	
+	.H_Menu_Hover{background:url( Image/Orange/DDC_IcnHi.png) no-repeat; height:105px; width:182px; position:absolute; left:-30px; top:0px; z-index:10; }
+	}
+}
+
+
+
+
+
