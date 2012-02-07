@@ -1,0 +1,141 @@
+﻿body {margin:0px; padding:0px;}
+body, div, td{font-size:13px; font-family:Arial, Helvetica, sans-serif;}
+img{border:0px; cursor:default;}
+	
+/* Font Sizes */
+.FS13{font-size:13px;}
+.FS14{font-size:14px;}
+	
+/* Margin Styles */
+.TMar3{margin-top:3px;}
+.RMar5{margin-right:5px;}
+	
+.CB{clear:both;}
+.Fl{float:left;}
+.Fr{float:right}
+.B{font-weight:bold;}
+.PR{position:relative;}
+.PA{position:absolute;}
+.TxtR{text-align:right}
+.TxtC{text-align:center}
+.None{display:none}
+.CH{cursor:pointer;}
+.OH{overflow:hidden;}
+.UnLine{text-decoration:underline;}
+
+
+
+
+	.H_PLR10{padding:0px 10px;}
+	.H_PLR510{padding:0px 5px 0px 10px;}
+	
+	.H_MenuContainer{position:relative; width:395px;_width:735px; height:65px; z-index:30;}
+	.SettingsIco{background:url( ../Image/DDC_MenuIcons.png) no-repeat; height:20px; width:25px; margin:0 auto; cursor:pointer;}
+	
+	
+	
+	
+	
+	/* Icon Menu */
+	#Header.BG_Icon{background-position:center -45px;width:100%; height:65px; position:relative;}
+	#HeaderMenu.Icon .H_MenuLnk li{float:left; padding:6px 4px 0px 4px;}
+	#HeaderMenu.Icon .H_MenuTabs{width:80px; color:#FF833C; text-decoration:none; position:relative; height:68px; cursor:pointer; border:0px solid red; }
+	#HeaderMenu.Icon .H_MLnk_Act, #HeaderMenu.Icon .H_MenuLnk_Act .H_MenuTabCont{color:#FCFFE1;}
+	#HeaderMenu.Icon .H_MenuTabCont{position:absolute;  width:80px; -moz-user-select:none; -webkit-user-select:none; text-align:center; left:0px; color:#FCFFE1; font-size:12px;}
+	#HeaderMenu.Icon .H_Ic_Home, #HeaderMenu.Icon .H_Ic_Act, #HeaderMenu.Icon .H_Ic_Mon, #HeaderMenu.Icon .H_Ic_Ast, #HeaderMenu.Icon .H_Ic_Rpt, #HeaderMenu.Icon .H_Ic_Sys, #HeaderMenu.Icon .H_Ic_Ord{display:block;}
+	#HeaderMenu.Icon .H_MenuTabCont{display:block;bottom:5px;}
+	#HeaderMenu.Icon img{background:url( ../Image/DDC_LogoSmall.png) no-repeat;width:118px;height:35px;margin-top:0px}
+	
+	/* Text Menu */
+	#Header.BG_Text{background-position:center -45px;width:100%; height:65px; position:relative;}
+	#HeaderMenu.Text .H_MenuLnk li{float:left; padding:6px 4px 0px 4px;}
+	#HeaderMenu.Text .H_MenuTabs{width:80px; color:#FF833C; text-decoration:none; position:relative; height:68px; cursor:pointer; border:0px solid red; }
+	#HeaderMenu.Text .H_MLnk_Act, #HeaderMenu.Text .H_MenuLnk_Act .H_MenuTabCont{color:#FCFFE1;}
+	#HeaderMenu.Text .H_MenuTabCont{position:absolute;  width:80px; -moz-user-select:none; -webkit-user-select:none; text-align:center; left:0px; color:#FCFFE1; font-size:12px;}
+	#HeaderMenu.Text .H_Ic_Home, #HeaderMenu.Text .H_Ic_Act, #HeaderMenu.Text .H_Ic_Mon, #HeaderMenu.Text .H_Ic_Ast, #HeaderMenu.Text .H_Ic_Rpt, #HeaderMenu.Text .H_Ic_Sys, #HeaderMenu.Text .H_Ic_Ord{display:none;}
+	#HeaderMenu.Text .H_MenuTabCont{display:block;bottom:34px;}
+	#HeaderMenu.Text img{background:url( ../Image/DDC_LogoSmall.png) no-repeat;width:118px;height:35px;margin-top:0px}
+	
+	/* Added for Mini Header */
+	#Header.BG_Micro{background-position:center -45px;width:100%; height:30px; position:relative;}
+	#HeaderMenu.Micro .H_MenuLnk li{float:left; padding:6px 4px 0px 4px;}
+	#HeaderMenu.Micro .H_MenuTabs{width:80px; color:#FF833C; text-decoration:none; position:relative; height:38px; cursor:pointer; border:0px solid red; }
+	#HeaderMenu.Micro .H_MLnk_Act, #HeaderMenu.Text .H_MenuLnk_Act .H_MenuTabCont{color:#FCFFE1;}
+	#HeaderMenu.Micro .H_MenuTabCont{position:absolute; margin-top:5px;  width:80px; -moz-user-select:none; -webkit-user-select:none; text-align:center; left:0px; color:#FCFFE1; font-size:12px;}
+	#HeaderMenu.Micro .H_Ic_Home, #HeaderMenu.Micro .H_Ic_Act, #HeaderMenu.Micro .H_Ic_Mon, #HeaderMenu.Micro .H_Ic_Ast, #HeaderMenu.Micro .H_Ic_Rpt, #HeaderMenu.Micro .H_Ic_Sys, #HeaderMenu.Micro .H_Ic_Ord{display:none;}
+	#Header .H_Micro_Tab {padding:7px 0px;background:url('Image/Mini/DDC_MiniHDBG.png') no-repeat; width:990px; height:29px; z-index:40 margin:0 auto; position:relative; pointer-events:none;}
+	#Header .H_Micro_Tab {padding:7px 0px;width:990px; height:29px; margin:0 auto; position:relative;}
+	#Header .H_Micro_Icons {width:90px; height:29px; top:-35px;left:450px;position:relative; z-index:40 }
+	#Header .H_Micro_Icons .Icon_Popout{ float:right;background-position:0px 0px; cursor:pointer; padding-right:5px;}
+	#Header .H_Micro_Icons .Icon_MiniToggle{ float:right;background-position:0px -17px; cursor:pointer; padding-right:5px;}
+	.Icon_Popout, .Icon_MiniToggle {background:url( ../Image/Mini/DDC_MiniIcons.png) no-repeat; height:17px; width:30px; margin:0 auto;}
+
+
+	/* Orange Styles */
+	.HeaderContainer.Orange {background-image:url(../Image/Orange/DDC_HDBG.png);}
+	.HeaderContainer.Orange .H_UserInfo{color:#FCBC4B; }
+	.HeaderContainer.Orange .H_Lnk{color:#FCBC4B;text-decoration:none;}
+	.HeaderContainer.Orange a.H_Lnk{ color:#ffffff;text-decoration:none;}
+	.HeaderContainer.Orange a.H_Lnk:hover{text-decoration:underline;}
+	.HeaderContainer.Orange .H_Ic_Home{ background-position:0px -56px;}
+	.HeaderContainer.Orange .H_Ic_Act{ background-position:-49px -56px;}
+	.HeaderContainer.Orange .H_Ic_Mon{ background-position:-98px -56px;}
+	.HeaderContainer.Orange .H_Ic_Ast{ background-position:-245px -56px;}
+	.HeaderContainer.Orange .H_Ic_Rpt{ background-position:-294px -56px;}
+	.HeaderContainer.Orange .H_Ic_Sys{ background-position:-147px -56px;}
+	.HeaderContainer.Orange .H_Ic_Ord{ background-position:-196px -56px;}
+	.HeaderContainer.Orange .SettingsIco{background-position:-350px -71px;}
+	/* Orange Full Menu*/
+	.HeaderContainer.Orange .Full{background:url( ../Image/Orange/DDC_MenuBG.png) no-repeat; width:990px; height:110px; margin:0 auto; position:relative; z-index:30;}
+	.HeaderContainer.Orange .Full .H_Menu_Hover{background:url( ../Image/Orange/DDC_IcnHi.png) no-repeat; height:105px; width:182px; position:absolute; left:-30px; top:0px; z-index:10; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../Image/Orange/DDC_IcnHi.png', sizingMethod='scale');}
+	/* Orange Icon Menu */
+	.HeaderContainer.Orange .Icon{background:url( ../Image/Orange/DDC_MenuBG.png) no-repeat 0px -45px; width:990px; height:65px;; margin:0 auto; position:relative; z-index:30;}
+	.HeaderContainer.Orange .Icon.H_Menu_Hover{background:url( ../Image/Orange/DDC_IcnHi.png) no-repeat 0px -45px; height:65px; width:182px; position:absolute; left:0px; top:0px; z-index:10; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Image/Orange/DDC_IcnHi.png', sizingMethod='scale');}
+	/* Orange Text Menu*/
+	.HeaderContainer.Orange .Text{background:url( ../Image/Orange/DDC_MenuBG.png) no-repeat 0px -45px; width:990px; height:65px;; margin:0 auto; position:relative; z-index:30;}
+	.HeaderContainer.Orange .Text .H_Menu_Hover{background:url( ../Image/Orange/DDC_IcnHi.png) no-repeat 0px -45px; height:65px; width:182px; position:absolute; left:0px; top:0px; z-index:10; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Image/Orange/DDC_IcnHi.png', sizingMethod='scale');}
+	/* Orange Mini Menu*/
+	.HeaderContainer.Orange .Micro{background:url( ../Image/Orange/DDC_MenuBG.png) no-repeat; width:990px; height:30px; position:relative; z-index:30; }
+	.HeaderContainer.Orange .Micro .H_MenuContainer{position:relative; width:900px; height:29px; margin-top:-73px;  }
+	.HeaderContainer.Orange .Micro .H_Menu_Hover{background:url( ../Image/Orange/DDC_IcnHi.png) no-repeat 0px -1px; margin-top:8px; height:22px; width:182px; position:absolute; left:0px; top:0px; z-index:10; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Image/Orange/DDC_IcnHi.png', sizingMethod='scale');}
+	
+
+	/* Content */
+	.PageOutter_Orange{width:100%;background:#f4f5f8 url('Image/Orange/ContentBg.png') repeat-x top left;}
+	.PageOutter_Blue{width:100%;background:#f4f5f8 url('Image/Blue/ContentBg.png') repeat-x top left;}
+	.PageOutter_Red{width:100%;background:#f4f5f8 url('Image/Red/ContentBg.png') repeat-x top left;}
+
+	.PageInner{width:990px;background-color:#ffffff;border-left:1px solid #dddee1;border-right:1px solid #dddee1;min-height:650px;}
+
+
+
+
+	
+.HeaderContainer{}	
+.HeaderContainer ul.H_MenuLnk{margin:0px 0px 0px 17px; padding:0px; list-style:none; overflow:hidden; width:620px; position:absolute; left:0px; top:0px; z-index:20;}
+.HeaderContainer a.WhiteLnk1	{color: #ffffff; text-decoration: none;}
+.HeaderContainer a.WhiteLnk1:hover{color: #ffffff; text-decoration: underline;}	
+
+/* Menu Icons */
+.H_Ic_Home, .H_Ic_Act, .H_Ic_Mon, .H_Ic_Ast, .H_Ic_Rpt,	.H_Ic_Sys, .H_Ic_Ord, .H_MenuLnk_Act .H_Ic_Home, .H_MenuLnk_Act .H_Ic_Act, .H_MenuLnk_Act .H_Ic_Mon, .H_MenuLnk_Act .H_Ic_Ast, .H_MenuLnk_Act .H_Ic_Rpt, .H_MenuLnk_Act .H_Ic_Sys, .H_MenuLnk_Act .H_Ic_Ord{background:url( ../Image/DDC_MenuIcons.png) no-repeat; height:54px; width:49px; margin:0 auto; }
+.HeaderContainer .H_MenuLnk_Act .H_Ic_Home{ background-position:0px 0px;}
+.HeaderContainer .H_MenuLnk_Act .H_Ic_Home{ background-position:0px 0px;}
+.HeaderContainer .H_MenuLnk_Act .H_Ic_Act{ background-position:-49px 0px;}
+.HeaderContainer .H_MenuLnk_Act .H_Ic_Mon{ background-position:-98px 0px;}
+.HeaderContainer .H_MenuLnk_Act .H_Ic_Ast{ background-position:-245px 0px;}
+.HeaderContainer .H_MenuLnk_Act .H_Ic_Rpt{ background-position:-294px 0px;}
+.HeaderContainer .H_MenuLnk_Act .H_Ic_Sys{ background-position:-147px 0px;}
+.HeaderContainer .H_MenuLnk_Act .H_Ic_Ord{ background-position:-196px 0px;}
+
+/* Full Menu */
+.HeaderContainer.BG_Full{background-position:center 0px;width:100%; height:110px; position:relative;}
+#HeaderMenu.Full .H_MenuLnk li{float:left; padding:24px 4px 0px 4px;}
+#HeaderMenu.Full .H_MenuTabs{width:80px; color:#FF833C; text-decoration:none; position:relative; height:68px; cursor:pointer; border:0px solid red; }
+#HeaderMenu.Full .H_MenuLnk_Act, #HeaderMenu.Full. H_MenuLnk_Act .H_MenuTabCont{color:#FCFFE1;}
+#HeaderMenu.Full .H_MenuTabCont{position:absolute; bottom:5px; width:80px; -moz-user-select:none; -webkit-user-select:none; text-align:center; left:0px; color:#FCFFE1; font-size:12px;}
+#HeaderMenu.Full .H_Ic_Home, #HeaderMenu.Full .H_Ic_Act, #HeaderMenu.Full .H_Ic_Mon, #HeaderMenu.Full .H_Ic_Ast, #HeaderMenu.Full .H_Ic_Rpt, #HeaderMenu.Full .H_Ic_Sys, #HeaderMenu.Full .H_Ic_Ord{display:block;}
+#HeaderMenu.Full .H_MenuTabCont{display:block;bottom:5px;}
+#HeaderMenu.Full img{background:url( ../Image/DDC_Logo.png) no-repeat;width:97px;height:60px;margin-top:7px}
+
+.SpriteImg{background:url( ../Image/DDC_MenuIcons.png) no-repeat; height:54px; width:49px; margin:0 auto; }
+img.VzImg{background:url( ../Image/DDC_Logo.png) no-repeat !important;width:97px;height:60px;margin-top:7px;display:block;}
