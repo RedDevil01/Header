@@ -22,7 +22,7 @@
                     id: icon + "_spriteImg"
                 }).attr({
                     style: "font-weight: normal"
-                }).css('backgroundPosition', ((-49) * _i) + 'px ' + -56 + 'px').addClass(this.css.SpriteImg);
+                }).css('backgroundPosition', this.options.SpriteIconHorizontalPosition[_i] + 'px ' + this.options.SpriteIconVerticalPosition[this.options.IconSet] + 'px').addClass(this.css.SpriteImg);
                 MenuTabCont = ($('<div/>')).attr({
                     style: "font-weight: normal"
                 }).text(icon).addClass(this.css.MenuTabCont);
@@ -39,8 +39,10 @@
                 MenuLink.append(TempliTag);
             }
             MenuContainer = ($('<div/>')).addClass(this.css.MenuContainer).append(MenuActive).append(CurrentPage).append(MenuLink);
-            VzImg = ($('<img/>')).addClass(this.css.VzImg);
-            VzImgDiv = ($('<div/>')).addClass(this.css.ImgDiv).addClass(this.css.Fr).append(VzImg);
+            VzImg = ($('<img/>')).attr({
+                'style': 'margin-top:' + this.options.Mini * 38 + 'px !important'
+            }).addClass(this.css.VzImg);
+            VzImgDiv = ($('<div/>')).addClass(this.css.wrapperLogo).append(VzImg);
             helpTag = ($('<a/>')).text("Help").attr({
                 id: 'help'
             }).attr('href', 'javascript:void(0)').addClass(this.css.HLink);
@@ -51,19 +53,21 @@
             breaker2 = ($('<span/>')).text('|').addClass(this.css.HBreak);
             breaker3 = ($('<span/>')).text('|').addClass(this.css.HBreak);
             userInfo = ($('<span/>')).text("Hello," + this.options.Username).addClass(this.css.UserInfo);
-            settingsIcon = ($('<div/>')).addClass(this.css.Fr).addClass(this.css.settingsIcon);
-            optionsDiv = ($('<div/>')).addClass(this.css.Fr).append(userInfo).append(breaker1).append(signOutTag).append(breaker2).append(helpTag).append(breaker3).append(settingsIcon);
+            settingsIcon = ($('<div/>')).addClass(this.css.settingsIcon);
+            optionsDiv = ($('<div/>')).append(userInfo).append(breaker1).append(signOutTag).append(breaker2).append(helpTag).append(breaker3).append(settingsIcon);
             VzLogo = ($('<div/>')).attr({
                 id: 'VzLogo'
             }).attr({
                 'align': 'right'
-            }).addClass(this.css.Fr).addClass(this.css.Logo).append(optionsDiv).append(VzImgDiv);
+            }).addClass(this.css.wrapperSettings).addClass(this.css.Logo).append(optionsDiv).append(VzImgDiv);
             HeaderMenu = ($('<div/>')).attr({
                 id: this.css.HeaderMenu
-            }).addClass(this.css.Full).append(MenuContainer).append(VzLogo);
+            }).addClass(this.css.headerMenu).append(MenuContainer).append(VzLogo);
             return ($(this.element)).attr({
                 id: this.options.Name
-            }).addClass(this.options.BackgroundColor + " BG_Full").append(HeaderMenu);
+            }).attr({
+                'style': 'margin-top:-' + this.options.Mini * 68 + 'px'
+            }).addClass(this.options.BackgroundColor).addClass(this.css.wrapperHeader).append(HeaderMenu);
         };
 
         CommonHeader.prototype._init = function () {
@@ -88,55 +92,63 @@
             _ref = this.options.Icons;
             for (_i = 0, _len = _ref.length; _i < _len; _i++) {
                 icon = _ref[_i];
-                $('#' + this.options.Name + " #" + this.options.Icons[_i] + "_spriteImg").css('backgroundPosition', ((-49) * _i) + 'px -56px');
+                $('#' + this.options.Name + " #" + this.options.Icons[_i] + "_spriteImg").css('backgroundPosition', this.options.SpriteIconHorizontalPosition[_i] + 'px ' + this.options.SpriteIconVerticalPosition[this.options.IconSet] + 'px');
             }
             $('.' + this.css.MenuHover).animate({
-                left: this.options.SpritePosition[ClickedIconIndex]
+                left: this.options.HighlighterMovementPosition[ClickedIconIndex]
             }, 300);
-            $('#' + this.options.Name + " #" + this.options.Icons[ClickedIconIndex] + "_spriteImg").css('backgroundPosition', ((-49) * ClickedIconIndex) + 'px 0');
+            $('#' + this.options.Name + " #" + this.options.Icons[ClickedIconIndex] + "_spriteImg").css('backgroundPosition', this.options.SpriteIconHorizontalPosition[ClickedIconIndex] + 'px 0');
             return window.location = this.options.URLs[ClickedIconIndex];
         };
 
-        CommonHeader.prototype.IconMouseOver = function (MouseOverIndex) {
-            return $('#' + this.options.Name + " #" + this.options.Icons[MouseOverIndex] + "_spriteImg").css('backgroundPosition', ((-49) * MouseOverIndex) + 'px 0');
+        CommonHeader.prototype.IconMouseOver = function (MouseOverIndex, ClickedIconIndex) {
+            $('#' + this.options.Name + " #" + this.options.Icons[MouseOverIndex] + "_spriteImg").css('backgroundPosition', this.options.SpriteIconHorizontalPosition[MouseOverIndex] + 'px 0');
+            if (MouseOverIndex !== ClickedIconIndex) {
+                return $('#' + this.options.Name + " #" + this.options.Icons[MouseOverIndex] + "_spriteImg").next().attr({
+                    'style': 'font-weight : bold'
+                });
+            }
         };
 
         CommonHeader.prototype.IconMouseOut = function (MouseOutIndex, ClickedIconIndex) {
             if (MouseOutIndex !== ClickedIconIndex) {
-                return $('#' + this.options.Name + " #" + this.options.Icons[MouseOutIndex] + "_spriteImg").css('backgroundPosition', ((-49) * MouseOutIndex) + 'px -56px');
+                $('#' + this.options.Name + " #" + this.options.Icons[MouseOutIndex] + "_spriteImg").css('backgroundPosition', this.options.SpriteIconHorizontalPosition[MouseOutIndex] + 'px ' + this.options.SpriteIconVerticalPosition[this.options.IconSet] + 'px');
+                return $('#' + this.options.Name + " #" + this.options.Icons[MouseOutIndex] + "_spriteImg").next().attr({
+                    'style': 'font-weight : normal'
+                });
             }
         };
 
         CommonHeader.prototype.options = {
             Name: "Default",
+            Username: "",
             BackgroundColor: "Orange",
+            Mini: 0,
+            IconSet: 1,
             Icons: ["Home", "Accounts", "Onboarding", "Systems", "Orders", "Assets", "Reports"],
             URLs: ["#Home", "#Accounts", "#Onboarding", "#Systems", "#Orders", "#Assets", "#Reports"],
-            SpritePosition: [-30, 58, 146, 234, 322, 410, 498],
-            IconColors: ["#f79027", "#B9C51D", "#fac574", "#92d1dd", "#Faea7c", "#61b2db", "#F29994", '#FCFFE1'],
-            SpriteImgSet: 1,
-            DefaultValue: 50,
-            Username: ""
+            HighlighterMovementPosition: [-30, 58, 146, 234, 322, 410, 498],
+            SpriteIconHorizontalPosition: [0, -49, -98, -147, -196, -245, -294],
+            SpriteIconVerticalPosition: [-56, -105, -150]
         };
 
         CommonHeader.prototype.css = {
-            MenuHover: 'H_Menu_Hover',
-            MenuLink: 'H_MenuLnk',
-            MenuContainer: 'Fl H_MenuContainer',
-            Full: 'Full',
-            MenuTabCont: 'H_MenuTabCont',
-            MenuTabs: 'H_MenuTabs',
-            Logo: 'H_UPad',
-            VzImg: 'VzImg',
-            ImgDiv: 'CB',
-            Fr: 'Fr',
-            HLink: 'H_Lnk FS13',
-            HBreak: 'H_Lnk FS14 H_PLR510',
-            UserInfo: 'H_UserInfo FS13',
-            HeaderMenu: 'HeaderMenu',
-            SpriteImg: 'SpriteImg',
-            settingsIcon: 'SettingsIco',
-            Icon: 'IconClick'
+            wrapperHeader: 'ui-widget-header',
+            headerMenu: 'ui-header-menu',
+            MenuContainer: 'ui-menu-container',
+            MenuHover: 'ui-menu-hover',
+            MenuLink: 'ui-menu-link',
+            MenuTabs: 'ui-menutabs',
+            Icon: 'ui-iconclick',
+            SpriteImg: 'ui-spriteImg',
+            MenuTabCont: 'ui-menu-tab-content',
+            wrapperSettings: 'ui-wrapper-settings',
+            UserInfo: 'ui-user-info',
+            HLink: 'ui-h-link',
+            HBreak: 'ui-h-break',
+            settingsIcon: 'ui-settings-icon',
+            wrapperLogo: 'ui-wrapper-logo',
+            VzImg: 'ui-logo-img'
         };
 
         return CommonHeader;
@@ -144,4 +156,5 @@
     })();
 
     $.widget("vdms.CommonHeader", new CommonHeader);
+
 }).call(this);
