@@ -1,0 +1,86 @@
+﻿.ui-widget-header{background-position:center 0px;width:100%; height:110px; position:relative;font-size:12px;font-family:Arial,Helvetica,sans-serif;color:#000;}
+.ui-widget-header img{border:0px; cursor:default;}
+
+/*--------------------------------------------------------------------*/
+/*Theme = 'Orange'*/
+/*--------------------------------------------------------------------*/
+.ui-widget-header.Orange {background-image:url(../Image/Orange/DDC_HDBG.png);}
+.ui-widget-header.Orange .ui-header-menu{background:url( ../Image/Orange/DDC_MenuBG.png) no-repeat; width:990px; height:110px; margin:0 auto; position:relative; z-index:30;}
+.ui-widget-header.Orange .ui-header-menu .ui-menu-container{position:relative; width:395px;_width:735px; height:65px; z-index:30;float:left;}
+.ui-widget-header.Orange .ui-menu-hover{background:url( ../Image/Orange/DDC_IcnHi.png) no-repeat; height:105px; width:182px; position:absolute; left:-30px; top:0px; z-index:10; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../Image/Orange/DDC_IcnHi.png', sizingMethod='scale');}
+.ui-widget-header.Orange .ui-header-menu ul.ui-menu-link{margin:0px 0px 0px 17px; padding:0px; list-style:none; overflow:hidden; width:620px; position:absolute; left:0px; top:0px; z-index:20;}
+.ui-widget-header.Orange .ui-header-menu .ui-menu-link li{float:left; padding:24px 4px 0px 4px;}
+.ui-widget-header.Orange .ui-header-menu .ui-menutabs{width:80px; color:#FF833C; text-decoration:none; position:relative; height:68px; cursor:pointer; border:0px solid red; }
+.ui-widget-header.Orange .ui-header-menu .ui-menu-tab-content{color:#FCFFE1;}
+.ui-widget-header.Orange .ui-header-menu .ui-menu-tab-content{position:absolute;  width:80px; -moz-user-select:none; -webkit-user-select:none; text-align:center; left:0px; color:#FCFFE1; font-size:12px;}
+.ui-widget-header.Orange .ui-header-menu .ui-menu-tab-content{display:block;bottom:5px;}
+.ui-widget-header.Orange .ui-header-menu .ui-spriteImg{background:url( ../Image/DDC_MenuIcons.png) no-repeat; height:54px; width:49px; margin:0 auto; }
+.ui-widget-header.Orange .ui-wrapper-settings{float:right;}
+.ui-widget-header.Orange .ui-header-menu .ui-user-info{color:#FCBC4B;font-size:13px; }
+.ui-widget-header.Orange .ui-header-menu .ui-h-link{color:#FCBC4B;text-decoration:none;font-size:13px;}
+.ui-widget-header.Orange .ui-header-menu a.ui-h-link{ color:#ffffff;text-decoration:none;}
+.ui-widget-header.Orange .ui-header-menu a.ui-h-link:hover{text-decoration:underline;}
+.ui-widget-header.Orange .ui-header-menu .ui-h-break{color:#FCBC4B;text-decoration:none;font-size:14px;padding:0 10px;}
+.ui-widget-header.Orange .ui-header-menu .ui-settings-icon{background:url( ../Image/DDC_MenuIcons.png) no-repeat; height:20px; width:25px; margin:0 auto; cursor:pointer;float:right;}
+.ui-widget-header.Orange .ui-header-menu .ui-settings-icon{background-position:-350px -71px;}
+
+.ui-widget-header.Orange .ui-wrapper-logo{clear:both;float:right;}	
+.ui-widget-header.Orange .ui-wrapper-logo img.ui-logo-img{background:url( ../Image/DDC_Logo.png) no-repeat !important;width:97px;height:60px;margin-top:7px !important;display:block;}
+
+/*--------------------------------------------------------------------*/
+/*Theme = 'Blue'*/
+/*--------------------------------------------------------------------*/
+
+.ui-widget-header.Blue {background-image:url(../Image/Blue/DDC_HDBG.png);}
+.ui-widget-header.Blue .ui-header-menu{background:url( ../Image/Blue/DDC_MenuBG.png) no-repeat; width:990px; height:110px; margin:0 auto; position:relative; z-index:30;}
+.ui-widget-header.Blue .ui-header-menu{background:url( ../Image/Blue/DDC_MenuBG.png) no-repeat; width:990px; height:110px; margin:0 auto; position:relative; z-index:30;}
+.ui-widget-header.Blue .ui-header-menu .ui-menu-container{position:relative; width:395px;_width:735px; height:65px; z-index:30;float:left;}
+.ui-widget-header.Blue .ui-menu-hover{background:url( ../Image/Blue/DDC_IcnHi.png) no-repeat; height:105px; width:182px; position:absolute; left:-30px; top:0px; z-index:10; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../Image/Blue/DDC_IcnHi.png', sizingMethod='scale');}
+.ui-widget-header.Blue .ui-header-menu ul.ui-menu-link{margin:0px 0px 0px 17px; padding:0px; list-style:none; overflow:hidden; width:620px; position:absolute; left:0px; top:0px; z-index:20;}
+.ui-widget-header.Blue .ui-header-menu .ui-menu-link li{float:left; padding:24px 4px 0px 4px;}
+.ui-widget-header.Blue .ui-header-menu .ui-menutabs{width:80px; color:#FF833C; text-decoration:none; position:relative; height:68px; cursor:pointer; border:0px solid red; }
+.ui-widget-header.Blue .ui-header-menu .ui-menu-tab-content{color:#FCFFE1;}
+.ui-widget-header.Blue .ui-header-menu .ui-menu-tab-content{position:absolute;  width:80px; -moz-user-select:none; -webkit-user-select:none; text-align:center; left:0px; color:#FCFFE1; font-size:12px;}
+.ui-widget-header.Blue .ui-header-menu .ui-menu-tab-content{display:block;bottom:5px;}
+.ui-widget-header.Blue .ui-header-menu .ui-spriteImg{background:url( ../Image/DDC_MenuIcons.png) no-repeat; height:54px; width:49px; margin:0 auto; }
+.ui-widget-header.Blue .ui-wrapper-settings{float:right;}
+.ui-widget-header.Blue .ui-header-menu .ui-user-info{color:#FFE04F;font-size:13px; }
+.ui-widget-header.Blue .ui-header-menu .ui-h-link{color:#155977;text-decoration:none;font-size:13px;}
+.ui-widget-header.Blue .ui-header-menu a.ui-h-link{ color:#155977;text-decoration:none;}
+.ui-widget-header.Blue .ui-header-menu a.ui-h-link:hover{text-decoration:underline;}
+.ui-widget-header.Blue .ui-header-menu .ui-h-break{color:#155977;text-decoration:none;font-size:14px;padding:0 10px;}
+.ui-widget-header.Blue .ui-header-menu .ui-settings-icon{background:url( ../Image/DDC_MenuIcons.png) no-repeat; height:20px; width:25px; margin:0 auto; cursor:pointer;float:right;}
+.ui-widget-header.Blue .ui-header-menu .ui-settings-icon{background-position:-350px -164px;}	
+
+.ui-widget-header.Blue .ui-wrapper-logo{clear:both;float:right;}	
+.ui-widget-header.Blue .ui-wrapper-logo img.ui-logo-img{background:url( ../Image/DDC_Logo.png) no-repeat !important;width:97px;height:60px;margin-top:7px !important;display:block;}
+
+/*--------------------------------------------------------------------*/
+/*Theme = 'Red'*/
+/*--------------------------------------------------------------------*/
+
+.ui-widget-header.Red {background-image:url(../Image/Red/DDC_HDBG.png);}
+.ui-widget-header.Red .ui-header-menu{background:url( ../Image/Red/DDC_MenuBG.png) no-repeat; width:990px; height:110px; margin:0 auto; position:relative; z-index:30;}
+.ui-widget-header.Red .ui-header-menu{background:url( ../Image/Red/DDC_MenuBG.png) no-repeat; width:990px; height:110px; margin:0 auto; position:relative; z-index:30;}
+.ui-widget-header.Red .ui-header-menu .ui-menu-container{position:relative; width:395px;_width:735px; height:65px; z-index:30;float:left;}
+.ui-widget-header.Red .ui-menu-hover{background:url( ../Image/Red/DDC_IcnHi.png) no-repeat; height:105px; width:182px; position:absolute; left:-30px; top:0px; z-index:10; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../Image/Red/DDC_IcnHi.png', sizingMethod='scale');}
+.ui-widget-header.Red .ui-header-menu ul.ui-menu-link{margin:0px 0px 0px 17px; padding:0px; list-style:none; overflow:hidden; width:620px; position:absolute; left:0px; top:0px; z-index:20;}
+.ui-widget-header.Red .ui-header-menu .ui-menu-link li{float:left; padding:24px 4px 0px 4px;}
+.ui-widget-header.Red .ui-header-menu .ui-menutabs{width:80px; color:#FF833C; text-decoration:none; position:relative; height:68px; cursor:pointer; border:0px solid red; }
+.ui-widget-header.Red .ui-header-menu .ui-menu-tab-content{color:#FCFFE1;}
+.ui-widget-header.Red .ui-header-menu .ui-menu-tab-content{position:absolute;  width:80px; -moz-user-select:none; -webkit-user-select:none; text-align:center; left:0px; color:#FCFFE1; font-size:12px;}
+.ui-widget-header.Red .ui-header-menu .ui-menu-tab-content{display:block;bottom:5px;}
+.ui-widget-header.Red .ui-header-menu .ui-spriteImg{background:url( ../Image/DDC_MenuIcons.png) no-repeat; height:54px; width:49px; margin:0 auto; }
+.ui-wrapper-settings{float:right;}
+.ui-widget-header.Red .ui-header-menu .ui-user-info{color:#FCBC4B;font-size:13px; }
+.ui-widget-header.Red .ui-header-menu .ui-h-link{color:#E0E0E0;text-decoration:none;font-size:13px;}
+.ui-widget-header.Red .ui-header-menu a.ui-h-link{ color:#E0E0E0;text-decoration:none;}
+.ui-widget-header.Red .ui-header-menu a.ui-h-link:hover{text-decoration:underline;}
+.ui-widget-header.Red .ui-header-menu .ui-h-break{color:#FCBC4B;text-decoration:none;font-size:14px;padding:0 10px;}
+.ui-widget-header.Red .ui-header-menu .ui-settings-icon{background:url( ../Image/DDC_MenuIcons.png) no-repeat; height:20px; width:25px; margin:0 auto; cursor:pointer;float:right;}
+.ui-widget-header.Red .ui-header-menu .ui-settings-icon{background-position:-350px -119px;}
+
+.ui-widget-header.Red .ui-wrapper-logo{clear:both;float:right;}	
+.ui-widget-header.Red .ui-wrapper-logo img.ui-logo-img{background:url( ../Image/DDC_Logo.png) no-repeat !important;width:97px;height:60px;margin-top:7px !important;display:block;}
+	
+	
