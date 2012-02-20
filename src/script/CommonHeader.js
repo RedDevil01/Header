@@ -132,7 +132,7 @@
     };
 
     ccHeader.prototype.css = {
-      wrapperHeader: 'ui-widget-header',
+      wrapperHeader: 'ccHeader',
       headerMenu: 'ui-header-menu',
       MenuContainer: 'ui-menu-container',
       MenuHover: 'ui-menu-hover',
