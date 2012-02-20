@@ -1,4 +1,4 @@
-﻿window.CommonHeader = class CommonHeader
+﻿window.ccHeader = class ccHeader
 	_create: -> 
 		MenuActive = ($ '<div/>').addClass(@css.MenuHover)
 
@@ -94,18 +94,19 @@
 					.append(HeaderMenu)
 
 
-	_init: ->                                                                                               
+	_init: ->
+		me = this
 		element = ($ this.element)
 		ClickedIconIndex = 0
-		($ "#"+this.options.Name+" "+'.' +this.css.Icon).click (event) =>
-			ClickedIconIndex = this.attributes[1].value                                                 # manual changes in javascript!!
-			@IconClicked(ClickedIconIndex)
+		($ "#"+this.options.Name+" "+'.' +this.css.Icon).click (event) ->
+			ClickedIconIndex = this.attributes[1].value
+			me.IconClicked(ClickedIconIndex)
 		
-		($ "#"+this.options.Name+" "+'.' +this.css.Icon).mouseover (event) =>
-			@IconMouseOver(this.attributes[1].value,ClickedIconIndex)                                   # manual changes in javascript!!
+		($ "#"+this.options.Name+" "+'.' +this.css.Icon).mouseover (event) ->
+			me.IconMouseOver(this.attributes[1].value,ClickedIconIndex)
 		
-		($ "#"+this.options.Name+" "+'.' +this.css.Icon).mouseout (event) =>
-			@IconMouseOut(this.attributes[1].value,ClickedIconIndex)                                    # manual changes in javascript!!
+		($ "#"+this.options.Name+" "+'.' +this.css.Icon).mouseout (event) ->
+			me.IconMouseOut(this.attributes[1].value,ClickedIconIndex)
 
 
 	IconClicked: (ClickedIconIndex) -> 
@@ -156,4 +157,4 @@
 		wrapperLogo: 'ui-wrapper-logo'
 		VzImg: 'ui-logo-img'
 			
-$.widget "vdms.CommonHeader", new CommonHeader
+$.widget "cc.ccHeader", new ccHeader
