@@ -1,3 +1,4 @@
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
 .ccHeader {
   background-position: center 0px;
   width: 100%;
@@ -6,38 +7,20 @@
   font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
   color: #000;
-  /*--------------------------------------------------------------------*/
-
-  /*Theme = 'Orange'*/
-  /*--------------------------------------------------------------------*/
-
-  /*--------------------------------------------------------------------*/
-
-  /*Theme = 'Blue'*/
-
-  /*--------------------------------------------------------------------*/
-  /*--------------------------------------------------------------------*/
-
-  /*Theme = 'Red'*/
-  /*--------------------------------------------------------------------*/
-
 }
 .ccHeader img {
   border: 0px;
   cursor: default;
 }
-.ccHeader.Orange {
-  background-image: url(../images/Orange/DDC_HDBG.png);
-}
-.ccHeader.Orange .ui-header-menu {
-  background: url(../images/Orange/DDC_MenuBG.png) no-repeat;
+.ccHeader.Blue .ccHeader-header-menu {
+  background: url("../images/Blue/DDC_MenuBG.png") no-repeat;
   width: 990px;
   height: 110px;
   margin: 0 auto;
   position: relative;
   z-index: 30;
 }
-.ccHeader.Orange .ui-header-menu .ui-menu-container {
+.ccHeader.Blue .ccHeader-header-menu .ccHeader-menu-container {
   position: relative;
   width: 395px;
   _width: 735px;
@@ -45,7 +28,7 @@
   z-index: 30;
   float: left;
 }
-.ccHeader.Orange .ui-header-menu ul.ui-menu-link {
+.ccHeader.Blue .ccHeader-header-menu ul.ccHeader-menu-link {
   margin: 0px 0px 0px 17px;
   padding: 0px;
   list-style: none;
@@ -56,11 +39,11 @@
   top: 0px;
   z-index: 20;
 }
-.ccHeader.Orange .ui-header-menu ul.ui-menu-link li {
+.ccHeader.Blue .ccHeader-header-menu ul.ccHeader-menu-link li {
   float: left;
   padding: 24px 4px 0px 4px;
 }
-.ccHeader.Orange .ui-header-menu .ui-menutabs {
+.ccHeader.Blue .ccHeader-header-menu .ccHeader-menutabs {
   width: 80px;
   color: #FF833C;
   text-decoration: none;
@@ -69,7 +52,7 @@
   cursor: pointer;
   border: 0px solid red;
 }
-.ccHeader.Orange .ui-header-menu .ui-menu-tab-content {
+.ccHeader.Blue .ccHeader-header-menu .ccHeader-menu-tab-content {
   color: #FCFFE1;
   position: absolute;
   width: 80px;
@@ -82,35 +65,35 @@
   display: block;
   bottom: 5px;
 }
-.ccHeader.Orange .ui-header-menu .ui-spriteImg {
+.ccHeader.Blue .ccHeader-header-menu .ccHeader-spriteImg {
   background: url(../images/DDC_MenuIcons.png) no-repeat;
   height: 54px;
   width: 49px;
   margin: 0 auto;
 }
-.ccHeader.Orange .ui-header-menu .ui-user-info {
+.ccHeader.Blue .ccHeader-header-menu .ccHeader-user-info {
   color: #FCBC4B;
   font-size: 13px;
 }
-.ccHeader.Orange .ui-header-menu .ui-h-link {
+.ccHeader.Blue .ccHeader-header-menu .ccHeader-h-link {
   color: #FCBC4B;
   text-decoration: none;
   font-size: 13px;
 }
-.ccHeader.Orange .ui-header-menu a.ui-h-link {
+.ccHeader.Blue .ccHeader-header-menu a.ccHeader-h-link {
   color: #ffffff;
   text-decoration: none;
 }
-.ccHeader.Orange .ui-header-menu a.ui-h-link:hover {
+.ccHeader.Blue .ccHeader-header-menu a.ccHeader-h-link:hover {
   text-decoration: underline;
 }
-.ccHeader.Orange .ui-header-menu .ui-h-break {
+.ccHeader.Blue .ccHeader-header-menu .ccHeader-h-break {
   color: #FCBC4B;
   text-decoration: none;
   font-size: 14px;
   padding: 0 10px;
 }
-.ccHeader.Orange .ui-header-menu .ui-settings-icon {
+.ccHeader.Blue .ccHeader-header-menu .ccHeader-settings-icon {
   background: url(../images/DDC_MenuIcons.png) no-repeat;
   height: 20px;
   width: 25px;
@@ -119,42 +102,39 @@
   float: right;
   background-position: -350px -71px;
 }
-.ccHeader.Orange .ui-menu-hover {
-  background: url(../images/Orange/DDC_IcnHi.png) no-repeat;
+.ccHeader.Blue .ccHeader-menu-hover {
+  background: url("../images/Blue/DDC_IcnHi.png") no-repeat;
   height: 105px;
   width: 182px;
   position: absolute;
   left: -30px;
   top: 0px;
   z-index: 10;
-  /*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/Orange/DDC_IcnHi.png', sizingMethod='scale');*/
+  /*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/@Theme/DDC_IcnHi.png', sizingMethod='scale');*/
 }
-.ccHeader.Orange .ui-wrapper-settings {
+.ccHeader.Blue .ccHeader-wrapper-settings {
   float: right;
 }
-.ccHeader.Orange .ui-wrapper-logo {
+.ccHeader.Blue .ccHeader-wrapper-logo {
   clear: both;
   float: right;
 }
-.ccHeader.Orange .ui-wrapper-logo img.ui-logo-img {
+.ccHeader.Blue .ccHeader-wrapper-logo div.ccHeader-logo-img {
   background: url(../images/DDC_Logo.png) no-repeat !important;
   width: 97px;
   height: 60px;
   margin-top: 7px !important;
   display: block;
 }
-.ccHeader.Blue {
-  background-image: url(../images/Blue/DDC_HDBG.png);
-}
-.ccHeader.Blue .ui-header-menu {
-  background: url(../images/Blue/DDC_MenuBG.png) no-repeat;
+.ccHeader.Orange .ccHeader-header-menu {
+  background: url("../images/Orange/DDC_MenuBG.png") no-repeat;
   width: 990px;
   height: 110px;
   margin: 0 auto;
   position: relative;
   z-index: 30;
 }
-.ccHeader.Blue .ui-header-menu .ui-menu-container {
+.ccHeader.Orange .ccHeader-header-menu .ccHeader-menu-container {
   position: relative;
   width: 395px;
   _width: 735px;
@@ -162,7 +142,7 @@
   z-index: 30;
   float: left;
 }
-.ccHeader.Blue .ui-header-menu ul.ui-menu-link {
+.ccHeader.Orange .ccHeader-header-menu ul.ccHeader-menu-link {
   margin: 0px 0px 0px 17px;
   padding: 0px;
   list-style: none;
@@ -173,11 +153,11 @@
   top: 0px;
   z-index: 20;
 }
-.ccHeader.Blue .ui-header-menu ul.ui-menu-link li {
+.ccHeader.Orange .ccHeader-header-menu ul.ccHeader-menu-link li {
   float: left;
   padding: 24px 4px 0px 4px;
 }
-.ccHeader.Blue .ui-header-menu .ui-menutabs {
+.ccHeader.Orange .ccHeader-header-menu .ccHeader-menutabs {
   width: 80px;
   color: #FF833C;
   text-decoration: none;
@@ -186,7 +166,7 @@
   cursor: pointer;
   border: 0px solid red;
 }
-.ccHeader.Blue .ui-header-menu .ui-menu-tab-content {
+.ccHeader.Orange .ccHeader-header-menu .ccHeader-menu-tab-content {
   color: #FCFFE1;
   position: absolute;
   width: 80px;
@@ -199,79 +179,76 @@
   display: block;
   bottom: 5px;
 }
-.ccHeader.Blue .ui-header-menu .ui-spriteImg {
+.ccHeader.Orange .ccHeader-header-menu .ccHeader-spriteImg {
   background: url(../images/DDC_MenuIcons.png) no-repeat;
   height: 54px;
   width: 49px;
   margin: 0 auto;
 }
-.ccHeader.Blue .ui-header-menu .ui-user-info {
-  color: #FFE04F;
+.ccHeader.Orange .ccHeader-header-menu .ccHeader-user-info {
+  color: #FCBC4B;
   font-size: 13px;
 }
-.ccHeader.Blue .ui-header-menu .ui-h-link {
-  color: #155977;
+.ccHeader.Orange .ccHeader-header-menu .ccHeader-h-link {
+  color: #FCBC4B;
   text-decoration: none;
   font-size: 13px;
 }
-.ccHeader.Blue .ui-header-menu a.ui-h-link {
-  color: #155977;
+.ccHeader.Orange .ccHeader-header-menu a.ccHeader-h-link {
+  color: #ffffff;
   text-decoration: none;
 }
-.ccHeader.Blue .ui-header-menu a.ui-h-link:hover {
+.ccHeader.Orange .ccHeader-header-menu a.ccHeader-h-link:hover {
   text-decoration: underline;
 }
-.ccHeader.Blue .ui-header-menu .ui-h-break {
-  color: #155977;
+.ccHeader.Orange .ccHeader-header-menu .ccHeader-h-break {
+  color: #FCBC4B;
   text-decoration: none;
   font-size: 14px;
   padding: 0 10px;
 }
-.ccHeader.Blue .ui-header-menu .ui-settings-icon {
+.ccHeader.Orange .ccHeader-header-menu .ccHeader-settings-icon {
   background: url(../images/DDC_MenuIcons.png) no-repeat;
   height: 20px;
   width: 25px;
   margin: 0 auto;
   cursor: pointer;
   float: right;
-  background-position: -350px -164px;
+  background-position: -350px -71px;
 }
-.ccHeader.Blue .ui-menu-hover {
-  background: url(../images/Blue/DDC_IcnHi.png) no-repeat;
+.ccHeader.Orange .ccHeader-menu-hover {
+  background: url("../images/Orange/DDC_IcnHi.png") no-repeat;
   height: 105px;
   width: 182px;
   position: absolute;
   left: -30px;
   top: 0px;
   z-index: 10;
-  /*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/Blue/DDC_IcnHi.png', sizingMethod='scale');*/
+  /*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/@Theme/DDC_IcnHi.png', sizingMethod='scale');*/
 }
-.ccHeader.Blue .ui-wrapper-settings {
+.ccHeader.Orange .ccHeader-wrapper-settings {
   float: right;
 }
-.ccHeader.Blue .ui-wrapper-logo {
+.ccHeader.Orange .ccHeader-wrapper-logo {
   clear: both;
   float: right;
 }
-.ccHeader.Blue .ui-wrapper-logo img.ui-logo-img {
+.ccHeader.Orange .ccHeader-wrapper-logo div.ccHeader-logo-img {
   background: url(../images/DDC_Logo.png) no-repeat !important;
   width: 97px;
   height: 60px;
   margin-top: 7px !important;
   display: block;
 }
-.ccHeader.Red {
-  background-image: url(../images/Red/DDC_HDBG.png);
-}
-.ccHeader.Red .ui-header-menu {
-  background: url(../images/Red/DDC_MenuBG.png) no-repeat;
+.ccHeader.Red .ccHeader-header-menu {
+  background: url("../images/Red/DDC_MenuBG.png") no-repeat;
   width: 990px;
   height: 110px;
   margin: 0 auto;
   position: relative;
   z-index: 30;
 }
-.ccHeader.Red .ui-header-menu .ui-menu-container {
+.ccHeader.Red .ccHeader-header-menu .ccHeader-menu-container {
   position: relative;
   width: 395px;
   _width: 735px;
@@ -279,7 +256,7 @@
   z-index: 30;
   float: left;
 }
-.ccHeader.Red .ui-header-menu ul.ui-menu-link {
+.ccHeader.Red .ccHeader-header-menu ul.ccHeader-menu-link {
   margin: 0px 0px 0px 17px;
   padding: 0px;
   list-style: none;
@@ -290,11 +267,11 @@
   top: 0px;
   z-index: 20;
 }
-.ccHeader.Red .ui-header-menu ul.ui-menu-link li {
+.ccHeader.Red .ccHeader-header-menu ul.ccHeader-menu-link li {
   float: left;
   padding: 24px 4px 0px 4px;
 }
-.ccHeader.Red .ui-header-menu .ui-menutabs {
+.ccHeader.Red .ccHeader-header-menu .ccHeader-menutabs {
   width: 80px;
   color: #FF833C;
   text-decoration: none;
@@ -303,7 +280,7 @@
   cursor: pointer;
   border: 0px solid red;
 }
-.ccHeader.Red .ui-header-menu .ui-menu-tab-content {
+.ccHeader.Red .ccHeader-header-menu .ccHeader-menu-tab-content {
   color: #FCFFE1;
   position: absolute;
   width: 80px;
@@ -316,61 +293,61 @@
   display: block;
   bottom: 5px;
 }
-.ccHeader.Red .ui-header-menu .ui-spriteImg {
+.ccHeader.Red .ccHeader-header-menu .ccHeader-spriteImg {
   background: url(../images/DDC_MenuIcons.png) no-repeat;
   height: 54px;
   width: 49px;
   margin: 0 auto;
 }
-.ccHeader.Red .ui-header-menu .ui-user-info {
+.ccHeader.Red .ccHeader-header-menu .ccHeader-user-info {
   color: #FCBC4B;
   font-size: 13px;
 }
-.ccHeader.Red .ui-header-menu .ui-h-link {
-  color: #E0E0E0;
+.ccHeader.Red .ccHeader-header-menu .ccHeader-h-link {
+  color: #FCBC4B;
   text-decoration: none;
   font-size: 13px;
 }
-.ccHeader.Red .ui-header-menu a.ui-h-link {
-  color: #E0E0E0;
+.ccHeader.Red .ccHeader-header-menu a.ccHeader-h-link {
+  color: #ffffff;
   text-decoration: none;
 }
-.ccHeader.Red .ui-header-menu a.ui-h-link:hover {
+.ccHeader.Red .ccHeader-header-menu a.ccHeader-h-link:hover {
   text-decoration: underline;
 }
-.ccHeader.Red .ui-header-menu .ui-h-break {
+.ccHeader.Red .ccHeader-header-menu .ccHeader-h-break {
   color: #FCBC4B;
   text-decoration: none;
   font-size: 14px;
   padding: 0 10px;
 }
-.ccHeader.Red .ui-header-menu .ui-settings-icon {
+.ccHeader.Red .ccHeader-header-menu .ccHeader-settings-icon {
   background: url(../images/DDC_MenuIcons.png) no-repeat;
   height: 20px;
   width: 25px;
   margin: 0 auto;
   cursor: pointer;
   float: right;
-  background-position: -350px -119px;
+  background-position: -350px -71px;
 }
-.ccHeader.Red .ui-menu-hover {
-  background: url(../images/Red/DDC_IcnHi.png) no-repeat;
+.ccHeader.Red .ccHeader-menu-hover {
+  background: url("../images/Red/DDC_IcnHi.png") no-repeat;
   height: 105px;
   width: 182px;
   position: absolute;
   left: -30px;
   top: 0px;
   z-index: 10;
-  /*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/Red/DDC_IcnHi.png', sizingMethod='scale');*/
+  /*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/@Theme/DDC_IcnHi.png', sizingMethod='scale');*/
 }
-.ccHeader.Red .ui-wrapper-settings {
+.ccHeader.Red .ccHeader-wrapper-settings {
   float: right;
 }
-.ccHeader.Red .ui-wrapper-logo {
+.ccHeader.Red .ccHeader-wrapper-logo {
   clear: both;
   float: right;
 }
-.ccHeader.Red .ui-wrapper-logo img.ui-logo-img {
+.ccHeader.Red .ccHeader-wrapper-logo div.ccHeader-logo-img {
   background: url(../images/DDC_Logo.png) no-repeat !important;
   width: 97px;
   height: 60px;

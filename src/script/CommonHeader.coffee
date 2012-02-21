@@ -36,7 +36,7 @@
 								   .append(CurrentPage)
 								   .append(MenuLink) 
 		  
-		VzImg = ($ '<img/>').attr('style': 'margin-top:' + @options.Mini*38 + 'px !important')                  
+		VzImg = ($ '<div/>').attr('style': 'margin-top:' + @options.Mini*38 + 'px !important')                  
 							.addClass(@css.VzImg)                     
 
 		VzImgDiv = ($ '<div/>').addClass(@css.wrapperLogo)
@@ -141,20 +141,20 @@
 
 	css:
 		wrapperHeader : 'ccHeader'
-		headerMenu: 'ui-header-menu'
-		MenuContainer: 'ui-menu-container'
-		MenuHover: 'ui-menu-hover'
-		MenuLink: 'ui-menu-link'
-		MenuTabs: 'ui-menutabs'
-		Icon: 'ui-iconclick'
-		SpriteImg: 'ui-spriteImg'
-		MenuTabCont: 'ui-menu-tab-content'
-		wrapperSettings: 'ui-wrapper-settings'
-		UserInfo: 'ui-user-info'
-		HLink: 'ui-h-link'
-		HBreak: 'ui-h-break'
-		settingsIcon: 'ui-settings-icon'
-		wrapperLogo: 'ui-wrapper-logo'
-		VzImg: 'ui-logo-img'
+		headerMenu: 'ccHeader-header-menu'
+		MenuContainer: 'ccHeader-menu-container'
+		MenuHover: 'ccHeader-menu-hover'
+		MenuLink: 'ccHeader-menu-link'
+		MenuTabs: 'ccHeader-menutabs'
+		Icon: 'ccHeader-iconclick'
+		SpriteImg: 'ccHeader-spriteImg'
+		MenuTabCont: 'ccHeader-menu-tab-content'
+		wrapperSettings: 'ccHeader-wrapper-settings'
+		UserInfo: 'ccHeader-user-info'
+		HLink: 'ccHeader-h-link'
+		HBreak: 'ccHeader-h-break'
+		settingsIcon: 'ccHeader-settings-icon'
+		wrapperLogo: 'ccHeader-wrapper-logo'
+		VzImg: 'ccHeader-logo-img'
 			
 $.widget "cc.ccHeader", new ccHeader
