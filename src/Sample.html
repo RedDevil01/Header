@@ -4,40 +4,50 @@
     <meta charset="utf-8">
     <title>jQuery Header Widget</title>
     <link rel="stylesheet" type="text/css" href="css/CommonHeader.css">
-
 	
     <!-- include external libraries here... -->    
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
- 
+
     <!-- include internal libraries here... -->
     <script src="script/CommonHeader.js" type="text/javascript"></script> 
 	
-
     <script type="text/javascript" >
         $(function () {
             $("#1").ccHeader({
-                //Name: " ",                                                                                                  //Element Name
+                Name: "Sample1",                                                                                              //Element Name
                 Username: "Daniel",                                                                                           //UserName Shown on top roght corner  
                 BackgroundColor: "Blue",                                                                                      //orange blue or red  
                 IconSet: 0,                                                                                                   // 0 1 or 2 
                 Icons: ["Home", "Accounts", "Onboarding", "Systems", "Orders", "Assets", "Reports"],                          //Nmae of icons
                 URLs: ["#Home", "#Accounts", "#Onboarding", "#Systems", "#Orders", "#Assets", "#Reports"],                    //their corresponding URL's   
-                Mini: 0                                                                                                       // 1 or 0 
-
+       
                 /*following properties can be changed if sprite image is changed ,if not donot change 
                 HighlighterMovementPosition: [-30, 58, 146, 234, 322, 410, 498],
                 SpriteIconHorizontalPosition: [0, -49, -98, -147, -196, -245, -294],
                 SpriteIconVerticalPosition: [-56, -105, -150]
                 */
             });
+			
+			SignOut = function (Username) { alert(Username +" Sign Out here"); };
+			Help = function (Username) { return alert(Username +" help here"); };
+       
         });
-
+        
     </script>
 </head>
 
 <body>   
-    <div id="1" ></div>    
+    <div id="1" ></div>
+
+	<!-- username change javascript function demo   -->
+	
+	<div style="margin:140px 0 0 70px;position:absolute;font-family:arial;font-size:12px;width:auto;">
+		Click <a href="#" onclick="ccHeader.prototype.ChangeUserName( 'Tim' , 'Sample1');"> here</a>
+		 to change User Name dynamically (done by javascript function call:"ccHeader.prototype.ChangeUserName( 'Tim' , 'Sample1');" 
+	</div>
+	
+    
 </body>
 </html>
 

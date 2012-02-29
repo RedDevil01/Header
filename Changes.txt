@@ -1,0 +1,6 @@
+
+- Personalize Settings added as a part of the widget
+
+- Callback for signout and help added and demonstrated in html
+
+- javascript function for dynamic user name change
